@@ -1,0 +1,26 @@
+<table class="table table-striped border">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Aerolínea</th>
+      <th scope="col">Aeropuerto</th>
+      <th scope="col">Avión</th>
+      <th scope="col">Número de vuelo</th>
+      <th scope="col">Asiento</th>
+      <th scope="col">Código de reserva</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (vuelo of vuelos; track vuelo.id) {
+      <tr>
+        <th scope="row">{{ vuelo.id }}</th>
+        <td>{{ vuelo.aerolinea }}</td>
+        <td>{{ vuelo.aeropuerto }}</td>
+        <td>{{ vuelo.avion }}</td>
+        <td>{{ vuelo.numeroVuelo }}</td>
+        <td>{{ vuelo.asiento }}</td>
+        <td>{{ vuelo.codigoReserva }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
