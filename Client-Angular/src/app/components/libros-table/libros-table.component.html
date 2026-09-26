@@ -1,0 +1,27 @@
+<table class="table table-striped border">
+	<thead>
+		<tr>
+			<th scope="col">Id</th>
+			<th scope="col">Título</th>
+			<th scope="col">Autor</th>
+			<th scope="col">Género</th>
+			<th scope="col">Año</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (libro of libros; track libro) {
+			<tr>
+				<th scope="row">{{ libro.id }}</th>
+				<td>{{ libro.titulo }}</td>
+				<td>{{ libro.autor }}</td>
+				<td>
+					<dsb-badge-atom
+						[text]="libro.genero"
+						[type]="generoMap[libro.genero]" >
+					</dsb-badge-atom>
+				</td>
+				<td>{{ libro.anio }}</td>
+			</tr>
+		}
+	</tbody>
+</table>

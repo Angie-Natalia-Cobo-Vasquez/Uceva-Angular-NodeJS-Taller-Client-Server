@@ -71,4 +71,40 @@
  *           type: number
  *           example: 4500
  */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Libro:
+ *       type: object
+ *       description: Representa un libro del sistema
+ *       required:
+ *         - id
+ *         - titulo
+ *         - autor
+ *         - genero
+ *         - anio
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         titulo:
+ *           type: string
+ *           example: Cien años de soledad
+ *         autor:
+ *           type: string
+ *           example: Gabriel García Márquez
+ *         genero:
+ *           type: string
+ *           enum:
+ *             - Novela
+ *             - Ciencia Ficcion
+ *             - Fantasia
+ *             - Misterio
+ *           example: Novela
+ *         anio:
+ *           type: number
+ *           example: 1967
+ */
 export {};
