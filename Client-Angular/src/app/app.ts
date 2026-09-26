@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+
 import { RouterOutlet } from '@angular/router';
+
 import { NavbarConfig, NavbarOrganism } from '@brejcha13320/design-system-bootstrap';
 
 /**
@@ -15,7 +17,6 @@ import { NavbarConfig, NavbarOrganism } from '@brejcha13320/design-system-bootst
  * - Inicializar el layout general
  * - Proveer la configuración del menú de navegación
  * - Renderizar las vistas según el sistema de rutas
- *
  */
 @Component({
   selector: 'app-root',
@@ -55,16 +56,12 @@ export class App {
       icon: 'bootstrap',
       size: 2
     },
-        navLinks: [
-
+    navLinks: [
       { text: 'Usuarios', url: '/users' },
-
       { text: 'Productos', url: '/products' },
-
       { text: 'Libros', url: '/libros' },
-
       { text: 'Música', url: '/musica' },
-
+      { text: 'Vuelos', url: '/vuelos' },
     ]
   };
 }

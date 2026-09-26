@@ -4,6 +4,8 @@ import { UsersRoutes } from "./modules/users/users.routes";
 
 import { ProductsRoutes } from "./modules/products/products.routes";
 
+import { VuelosRoutes } from "./modules/vuelos/vuelos.routes";
+
 import { LibrosRoutes } from "./modules/libros/libros.routes";
 
 import { MusicaRoutes } from "./modules/musica/musica.routes";
@@ -14,7 +16,7 @@ import { MusicaRoutes } from "./modules/musica/musica.routes";
  * @remarks
  * Proporciona un único punto de acceso a los endpoints
  * del backend, agrupando los módulos de usuarios, productos,
- * libros y música.
+ * libros, música y vuelos.
  *
  * @example
  * ```ts
@@ -40,6 +42,8 @@ export class AppRoutes {
     router.use("/api/users", UsersRoutes.routes);
 
     router.use("/api/products", ProductsRoutes.routes);
+
+    router.use("/api/vuelos", VuelosRoutes.routes);
 
     router.use("/api/libros", LibrosRoutes.routes);
 

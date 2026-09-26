@@ -21,7 +21,9 @@ describe('App', () => {
       imports: [App],
 
       providers: [
+
         provideRouter([])
+
       ]
 
     }).compileComponents();
@@ -55,10 +57,17 @@ describe('App', () => {
       },
 
       navLinks: [
+
         { text: 'Usuarios', url: '/users' },
+
         { text: 'Productos', url: '/products' },
+
         { text: 'Libros', url: '/libros' },
-        { text: 'Música', url: '/musica' }
+
+        { text: 'Música', url: '/musica' },
+
+        { text: 'Vuelos', url: '/vuelos' }
+
       ]
 
     });

@@ -139,4 +139,43 @@
  *           example: 2020
  */
 
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Vuelo:
+ *       type: object
+ *       description: Representa un vuelo
+ *       required:
+ *         - id
+ *         - aerolinea
+ *         - aeropuerto
+ *         - avion
+ *         - numeroVuelo
+ *         - asiento
+ *         - codigoReserva
+ *       properties:
+ *         id:
+ *           type: integer
+ *           example: 1
+ *         aerolinea:
+ *           type: string
+ *           example: Avianca
+ *         aeropuerto:
+ *           type: string
+ *           example: El Dorado International Airport
+ *         avion:
+ *           type: string
+ *           example: Boeing 737-800
+ *         numeroVuelo:
+ *           type: string
+ *           example: AV123
+ *         asiento:
+ *           type: string
+ *           example: 12A
+ *         codigoReserva:
+ *           type: string
+ *           example: ABC123
+ */
+
 export {};

@@ -8,6 +8,8 @@ import { LibrosPage } from './pages/libros/libros.page';
 
 import { MusicaPage } from './pages/musica/musica.page';
 
+import { VuelosPage } from './pages/vuelos/vuelos.page';
+
 /**
  * Definición de las rutas principales de la aplicación.
  *
@@ -24,6 +26,7 @@ import { MusicaPage } from './pages/musica/musica.page';
  * @see {@link ProductsPage}
  * @see {@link LibrosPage}
  * @see {@link MusicaPage}
+ * @see {@link VuelosPage}
  */
 export const routes: Routes = [
   /**
@@ -60,6 +63,14 @@ export const routes: Routes = [
    * Renderiza la página que obtiene y muestra el listado de música.
    */
   { path: 'musica', component: MusicaPage },
+
+  /**
+   * Ruta de vuelos.
+   *
+   * @remarks
+   * Renderiza la página que obtiene y muestra el listado de vuelos.
+   */
+  { path: 'vuelos', component: VuelosPage },
 
   /**
    * Ruta comodín.
