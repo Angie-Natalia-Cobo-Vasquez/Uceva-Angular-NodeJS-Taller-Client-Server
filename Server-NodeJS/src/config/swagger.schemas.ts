@@ -107,4 +107,36 @@
  *           type: number
  *           example: 1967
  */
+
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     Musica:
+ *       type: object
+ *       description: Representa una canción
+ *       required:
+ *         - id
+ *         - cancion
+ *         - artista
+ *         - genero
+ *         - anio
+ *       properties:
+ *         id:
+ *           type: number
+ *           example: 1
+ *         cancion:
+ *           type: string
+ *           example: Piano Man
+ *         artista:
+ *           type: string
+ *           example: Billy Joel
+ *         genero:
+ *           type: string
+ *           example: Rock
+ *         anio:
+ *           type: number
+ *           example: 2020
+ */
+
 export {};

@@ -55,10 +55,16 @@ export class App {
       icon: 'bootstrap',
       size: 2
     },
-    navLinks: [
+        navLinks: [
+
       { text: 'Usuarios', url: '/users' },
+
       { text: 'Productos', url: '/products' },
+
       { text: 'Libros', url: '/libros' },
+
+      { text: 'Música', url: '/musica' },
+
     ]
   };
 }

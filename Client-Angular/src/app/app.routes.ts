@@ -1,7 +1,12 @@
 import { Routes } from '@angular/router';
+
 import { UsersPage } from './pages/users/users.page';
+
 import { ProductsPage } from './pages/products/products.page';
+
 import { LibrosPage } from './pages/libros/libros.page';
+
+import { MusicaPage } from './pages/musica/musica.page';
 
 /**
  * Definición de las rutas principales de la aplicación.
@@ -18,9 +23,9 @@ import { LibrosPage } from './pages/libros/libros.page';
  * @see {@link UsersPage}
  * @see {@link ProductsPage}
  * @see {@link LibrosPage}
+ * @see {@link MusicaPage}
  */
 export const routes: Routes = [
-
   /**
    * Ruta de usuarios.
    *
@@ -47,6 +52,14 @@ export const routes: Routes = [
    * de mostrar y gestionar el listado de libros.
    */
   { path: 'libros', component: LibrosPage },
+
+  /**
+   * Ruta de música.
+   *
+   * @remarks
+   * Renderiza la página que obtiene y muestra el listado de música.
+   */
+  { path: 'musica', component: MusicaPage },
 
   /**
    * Ruta comodín.
