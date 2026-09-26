@@ -58,6 +58,8 @@ export class App {
     navLinks: [
       { text: 'Usuarios', url: '/users' },
       { text: 'Productos', url: '/products' },
+      { text: 'Libros', url: '/libros' },
+      { text: 'Música', url: '/musica' },
     ]
   };
 }
