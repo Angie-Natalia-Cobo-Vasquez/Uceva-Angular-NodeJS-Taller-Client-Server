@@ -33,12 +33,18 @@ export class LibrosController {
    */
   getAllLibros = (req: Request, res: Response): void => {
     const { countLibros } = req.params;
+    const count = Number(countLibros);
+
+    if (!Number.isInteger(count) || count < 1) {
+      res.status(400).json({ error: "countLibros debe ser un entero mayor que cero" });
+      return;
+    }
 
     setTimeout(() => {
       this.librosService
-      .getAllLibros(Number(countLibros))
-      .then((libros) => res.status(201).json(libros))
-      .catch((error) => HandleError.error(error, res));
+        .getAllLibros(count)
+        .then((libros) => res.status(200).json(libros))
+        .catch((error) => HandleError.error(error, res));
     }, 3000);
-  };
+   };
 }
